@@ -1,0 +1,102 @@
+.resume{
+    width: 100%;
+}
+.timeline{
+    display: flex;
+    width: 100%;
+    padding: 20px;
+}
+.timeline-experience , .timeline-education{
+    width: 50%;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header-text-education{
+    display: flex;
+    color: var(--yellow-theme-sub-text-color);
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1rem;
+    letter-spacing: 0.5px;
+    position: relative;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-bottom: 2px solid var(--yellow-theme-main-color);
+}
+.header-text-experience{
+    display: flex;
+    color: var(--yellow-theme-sub-text-color);
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1rem;
+    letter-spacing: 0.5px;
+    position: relative;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-bottom: 2px solid var(--yellow-theme-main-color);
+
+}
+
+.header-text-education::before , .header-text-education::after{
+    position: absolute;
+    content: '';
+    width: 2px;
+    height: 5px;
+    background-color: var(--yellow-theme-main-color);
+    bottom: -1px;
+
+}
+.header-text-experience::before , .header-text-experience::before{
+    position: absolute;
+    content: '';
+    width: 2px;
+    height: 5px;
+    background-color: var(--yellow-theme-main-color);
+    bottom: -1px;
+}
+.header-text-education::before , .header-text-experience::before{
+    left: 0;
+}
+.header-text-education::after, .header-text-education::after{
+    right: 0;
+}
+.timeline-experience-vertical-timeline{
+    padding: 0px 0px 30px 0px;
+}
+.timeline-experience-vertical-timeline:last-child{
+    padding: 0px;
+}
+.vertical-timeline-wrapper,.vertical-timeline-wrapper-education{
+    display: flex;
+    align-items: center;
+}
+.vertical-timeline-element-title, .vertical-timeline-element-subtitle, .vertical-timeline-element-title-education, .vertical-timeline-element-subtitle-education{
+    font-size: 16px;
+}
+.vertical-timeline-element-subtitle, .vertical-timeline-element-subtitle-education{
+    margin-left: 8px;
+}
+.item-exp ,.item{
+    font-size: 78px;
+    
+}
+.date-edu ,.date-exp{
+    color: var(--yellow-theme-sub-text-color);
+    opacity: 1;
+    font-size: 22px;
+}
+
+
+@media (max-width:786px){
+    .timeline{
+        flex-direction: column;
+
+    }
+    .timeline-experience , .timeline-education{
+        width: 100%;
+        gap: 2rem;
+    }
+    
+}

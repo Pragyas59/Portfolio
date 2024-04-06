@@ -1,0 +1,159 @@
+.home{
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+.home-text-wrapper{
+    display: flex;
+   align-content: center;
+   
+}
+
+.h{
+    color: var( --yellow-theme-main-color);
+    margin: 0px;
+    font-weight: 150;
+    font-size: 6rem;
+    line-height: 6rem;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typingEffectAnimation 2.5s steps(30,end);
+    margin-bottom: 20%;
+}
+.my-image {
+    width: 200px; 
+    height: 200px; 
+    position: sticky;
+    bottom: 20px; 
+    left: 20px; 
+    border-radius: 50%; 
+    overflow: hidden; 
+}
+.image-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.contact-me{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 20px;
+
+}
+.conatct-me button{
+    cursor: pointer;
+    padding: 10px 70px;
+    font-size: 3rem;
+    background: transparent;
+    color: var(--yellow-theme-main-color);
+    border: 1.5px solid var(--yellow-theme-main-color);
+    border-radius: 4px;
+    font-weight: 500;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+
+
+}
+.conatct-me button:hover{
+    background: var(--yellow-theme-main-color);
+    color: #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 550px) {
+    .home-text-wrapper .h {
+        font-size: 4rem;
+        line-height: 6rem;
+    }
+    .my-image {
+        width: 200px;
+        height: 200px; 
+        margin-top: 10px;
+        left: 10px;
+    }
+    .contact-me button {
+        padding: 8px 20px; 
+        font-size: 1rem; 
+        margin-top: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 551px) and (max-width: 768px) {
+    .home-text-wrapper .h {
+        font-size: 6rem;
+        line-height: 8rem;
+    }
+    
+        .my-image {
+            width: 250px; 
+            height: 250px;
+            margin-top: 15px; 
+            left: 15px;
+        }
+        .contact-me button {
+            padding: 10px 30px; 
+            font-size: 1.3rem; 
+            margin-top: 15px;
+            flex-direction: column;
+        align-items: center;
+        }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 990px) {
+    .home-text-wrapper .h {
+        font-size: 6rem;
+        line-height: 8rem;
+    }
+    .my-image {
+        width: 300px; 
+        height: 300px; 
+        margin-top: 25px;
+        left: 25px;
+    }
+    .contact-me button {
+        padding: 12px 40px; 
+        font-size: 1.5rem; 
+        margin-top: 25px;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+    
+@keyframes  typingEffectAnimation{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+
