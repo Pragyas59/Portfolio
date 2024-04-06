@@ -1,6 +1,6 @@
 import React from "react";
 import './style.css';
-import {BsInfoCircleFill} from 'react-icons/bs'
+import BsInfoCircleFill from 'react-icons/bs'
 import PageHeaderContent from "../../Components/PageHeaderContent";
 import {Animate, AnimateKeyframes } from "react-simple-animate";
 
