@@ -1,7 +1,7 @@
 import React from "react";
 import './style.css';
 import { useNavigate } from "react-router-dom";
-import myImage from './image.png';
+import myImage from './pragya.jpg';
 import {Animate} from 'react-simple-animate'
 
 const Home = () => {
